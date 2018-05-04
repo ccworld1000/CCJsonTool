@@ -5,8 +5,8 @@ target "VisualJSON" do
     pod 'FoundationExtension', '~> 1.2.4'
     pod 'ObjectXML', '>= 0.2'
     pod 'AFNetworking', '~> 0.10.1'
-    pod 'Fabric'
-    pod 'Crashlytics'
+    
+    pod 'CCSQLite', '~> 3.0.0'
 end
 
 target "VisualXML" do
@@ -14,6 +14,6 @@ target "VisualXML" do
     pod 'FoundationExtension', '~> 1.2.4'
     pod 'ObjectXML', '>= 0.2'
     pod 'AFNetworking', '~> 0.10.1'
-    pod 'Fabric'
-    pod 'Crashlytics'
+    
+    pod 'CCSQLite', '~> 3.0.0'
 end

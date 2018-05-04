@@ -337,15 +337,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38255500157BE3550099CC24 /* Build configuration list for PBXNativeTarget "VisualJSON" */;
 			buildPhases = (
-				C5DF35C53535DC0C196DFC34 /* Check Pods Manifest.lock */,
+				C5DF35C53535DC0C196DFC34 /* [CP] Check Pods Manifest.lock */,
 				38CAB03C1664F48D00181B0D /* Generate Version xcconfig */,
 				382554B6157BE3550099CC24 /* Sources */,
 				382554B7157BE3550099CC24 /* Frameworks */,
 				382554B8157BE3550099CC24 /* Resources */,
 				388227E415924E57000AB63D /* Copy Frameworks */,
-				346F49323B434C84B4E1D346 /* Copy Pods Resources */,
-				F5C847DDDE34CBCCC996AC49 /* Embed Pods Frameworks */,
-				38F2F72E1B0F235000372447 /* Fabric */,
+				346F49323B434C84B4E1D346 /* [CP] Copy Pods Resources */,
+				F5C847DDDE34CBCCC996AC49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -377,15 +376,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3868F7881629E8E800C31163 /* Build configuration list for PBXNativeTarget "VisualXML" */;
 			buildPhases = (
-				0AF0832871F68648A9BA93AC /* Check Pods Manifest.lock */,
+				0AF0832871F68648A9BA93AC /* [CP] Check Pods Manifest.lock */,
 				38FEC66F1CBAAFC100EE3273 /* Generate version xcconfig */,
 				3868F7371629E8E700C31163 /* Sources */,
 				3868F7381629E8E700C31163 /* Frameworks */,
 				3868F7391629E8E700C31163 /* Resources */,
 				3868F79A1629EACF00C31163 /* Copy Frameworks */,
-				AD5FDDD27CE6756A35191F37 /* Copy Pods Resources */,
-				720EAD7A2E83FFBBA3F4F7F2 /* Embed Pods Frameworks */,
-				38FEC6711CBAB03E00EE3273 /* Fabric */,
+				AD5FDDD27CE6756A35191F37 /* [CP] Copy Pods Resources */,
+				720EAD7A2E83FFBBA3F4F7F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -464,30 +462,38 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AF0832871F68648A9BA93AC /* Check Pods Manifest.lock */ = {
+		0AF0832871F68648A9BA93AC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VisualXML-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		346F49323B434C84B4E1D346 /* Copy Pods Resources */ = {
+		346F49323B434C84B4E1D346 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VisualJSON/Pods-VisualJSON-resources.sh",
+				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.CCSQLite.txt",
+				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.FMDB.txt",
+				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.YapDatabase.txt",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -507,20 +513,6 @@
 			shellPath = /bin/sh;
 			shellScript = "echo \"APP_VERSION=`xcodepkgtool/version.sh`\" > version.xcconfig";
 		};
-		38F2F72E1B0F235000372447 /* Fabric */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = Fabric;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Pods/Fabric/run 1b5d8443c3eabba778b0d97bff234647af846181 34aaecdde99dce1f9408a963ba788143536760a1c73ce21b46a14f888c5d54c1";
-		};
 		38FEC66F1CBAAFC100EE3273 /* Generate version xcconfig */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -535,28 +527,14 @@
 			shellPath = /bin/sh;
 			shellScript = "echo \"APP_VERSION=`xcodepkgtool/version.sh`\" > version.xcconfig";
 		};
-		38FEC6711CBAB03E00EE3273 /* Fabric */ = {
+		720EAD7A2E83FFBBA3F4F7F2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = Fabric;
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "./Pods/Fabric/run 1b5d8443c3eabba778b0d97bff234647af846181 34aaecdde99dce1f9408a963ba788143536760a1c73ce21b46a14f888c5d54c1";
-		};
-		720EAD7A2E83FFBBA3F4F7F2 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,44 +542,52 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VisualXML/Pods-VisualXML-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AD5FDDD27CE6756A35191F37 /* Copy Pods Resources */ = {
+		AD5FDDD27CE6756A35191F37 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VisualXML/Pods-VisualXML-resources.sh",
+				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.CCSQLite.txt",
+				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.FMDB.txt",
+				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.YapDatabase.txt",
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VisualXML/Pods-VisualXML-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C5DF35C53535DC0C196DFC34 /* Check Pods Manifest.lock */ = {
+		C5DF35C53535DC0C196DFC34 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VisualJSON-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F5C847DDDE34CBCCC996AC49 /* Embed Pods Frameworks */ = {
+		F5C847DDDE34CBCCC996AC49 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -819,6 +805,7 @@
 			baseConfigurationReference = 38FEC6731CBAB0CA00EE3273 /* Pods-VisualJSON.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = VisualJSON/Entitlements.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

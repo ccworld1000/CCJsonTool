@@ -1,38 +1,15 @@
-[![Build Status](https://travis-ci.org/youknowone/VisualJSON.svg?branch=master)](https://travis-ci.org/youknowone/VisualJSON)
-
-Website: [http://youknowone.github.com/VisualJSON](http://youknowone.github.com/VisualJSON)
+Website: [https://github.com/ccworld1000/VisualJSON](https://github.com/ccworld1000/VisualJSON)
 
 VisualJSON is simple JSON pretty-viewer for Mac OS X.
 
-## For user
-### Download
-Download recent VisualJSON on Appstore. ([http://itunes.apple.com/app/id488709442](http://itunes.apple.com/app/id488709442))
-
-Or try preview if available. ([http://github.com/youknowone/VisualJSON/downloads](http://github.com/youknowone/VisualJSON/downloads))
-
-### Help
-Visit help wiki ([http://github.com/youknowone/VisualJSON/wiki](http://github.com/youknowone/VisualJSON/wiki))
-
-### Report an issue
-You need github account. Issue tracker is [http://github.com/youknowone/VisualJSON/issues](http://github.com/youknowone/VisualJSON/issues)
-
-### IRC
-You need an IRC client, such as [XChat Azure](http://xchataqua.github.com)
-
-Visit [irc://irc.freenode.org/#youknowone](irc://irc.freenode.org/#youknowone)
-
-NOTE: I am joining always, but don't feedback realtime.
-
 ## For developer
-Fork on project page [http://github.com/youknowone/VisualJSON](http://github.com/youknowone/VisualJSON).
+Fork on project page [https://github.com/ccworld1000/VisualJSON](https://github.com/ccworld1000/VisualJSON).
 
 Or clone this project.
 ```
-git clone git://github.com/youknowone/VisualJSON.git
+git clone https://github.com/ccworld1000/VisualJSON.git
 cd VisualJSON
 git submodule update --init
 pod install
 open VisualJSON.xcworkspace
 ```
-
-HACKING.md for tips ;)
