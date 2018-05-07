@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0080B56920A010780041F9C3 /* CCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0080B56820A010780041F9C3 /* CCConst.m */; };
+		0080B56A20A010A40041F9C3 /* CCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0080B56820A010780041F9C3 /* CCConst.m */; };
 		382554BF157BE3550099CC24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554BE157BE3550099CC24 /* Cocoa.framework */; };
 		382554C9157BE3550099CC24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 382554C7157BE3550099CC24 /* InfoPlist.strings */; };
 		382554CB157BE3550099CC24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554CA157BE3550099CC24 /* main.m */; };
@@ -75,6 +77,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0080B56720A010780041F9C3 /* CCConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCConst.h; sourceTree = "<group>"; };
+		0080B56820A010780041F9C3 /* CCConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCConst.m; sourceTree = "<group>"; };
 		338543E687681EA734AABFE8 /* libPods-VisualJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VisualJSON.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382554BA157BE3550099CC24 /* VisualJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		382554BE157BE3550099CC24 /* Cocoa.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -282,6 +286,8 @@
 		3868F7921629E95200C31163 /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				0080B56720A010780041F9C3 /* CCConst.h */,
+				0080B56820A010780041F9C3 /* CCConst.m */,
 				385E84F51597839F001562F6 /* AppDelegate.h */,
 				385E84F61597839F001562F6 /* AppDelegate.m */,
 				38A1C033157DD7030034EDC4 /* VJRequest.h */,
@@ -400,9 +406,9 @@
 		382554B1157BE3550099CC24 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = VJ;
+				CLASSPREFIX = CC;
 				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = youknowone.org;
+				ORGANIZATIONNAME = "https://github.com/ccworld1000/VisualJSON";
 				TargetAttributes = {
 					382554B9157BE3550099CC24 = {
 						DevelopmentTeam = 9384JEL3M9;
@@ -608,6 +614,7 @@
 				38A1C035157DD7030034EDC4 /* VJRequest.m in Sources */,
 				38A1C038157E15240034EDC4 /* VJDocument.xcdatamodeld in Sources */,
 				385E84F71597839F001562F6 /* AppDelegate.m in Sources */,
+				0080B56920A010780041F9C3 /* CCConst.m in Sources */,
 				3868F79E1629EDCF00C31163 /* VJJsonDocumentDelegate.m in Sources */,
 				3868F7A4162B1AAC00C31163 /* VJXMLDocumentDelegate.m in Sources */,
 				388DE10A165480EE00139B31 /* VJDocumentHistory.m in Sources */,
@@ -636,6 +643,7 @@
 				3868F7981629EAB200C31163 /* VJDocument.xcdatamodeld in Sources */,
 				3868F7A11629F12200C31163 /* VJXMLDocumentDelegate.m in Sources */,
 				387B1EBA16EBDEA80059722B /* VJJsonDocumentDelegate.m in Sources */,
+				0080B56A20A010A40041F9C3 /* CCConst.m in Sources */,
 				387B1EBB16EBDEB40059722B /* JsonElement.m in Sources */,
 				387B1EBC16EBDEC30059722B /* VJDocumentHistory.m in Sources */,
 			);
