@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0080B56920A010780041F9C3 /* CCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0080B56820A010780041F9C3 /* CCConst.m */; };
 		0080B56A20A010A40041F9C3 /* CCConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 0080B56820A010780041F9C3 /* CCConst.m */; };
+		008EC3E920A4083E008E2270 /* CCRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 008EC3E820A4083E008E2270 /* CCRequest.m */; };
 		382554BF157BE3550099CC24 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 382554BE157BE3550099CC24 /* Cocoa.framework */; };
 		382554C9157BE3550099CC24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 382554C7157BE3550099CC24 /* InfoPlist.strings */; };
 		382554CB157BE3550099CC24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 382554CA157BE3550099CC24 /* main.m */; };
@@ -79,6 +80,8 @@
 /* Begin PBXFileReference section */
 		0080B56720A010780041F9C3 /* CCConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCConst.h; sourceTree = "<group>"; };
 		0080B56820A010780041F9C3 /* CCConst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCConst.m; sourceTree = "<group>"; };
+		008EC3E720A4083E008E2270 /* CCRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRequest.h; sourceTree = "<group>"; };
+		008EC3E820A4083E008E2270 /* CCRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCRequest.m; sourceTree = "<group>"; };
 		338543E687681EA734AABFE8 /* libPods-VisualJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VisualJSON.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382554BA157BE3550099CC24 /* VisualJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		382554BE157BE3550099CC24 /* Cocoa.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
@@ -237,9 +240,9 @@
 			children = (
 				382554D6157BE3550099CC24 /* MainMenu.xib */,
 				38255565157C94C50099CC24 /* JsonElement.h */,
+				38255566157C94C50099CC24 /* JsonElement.m */,
 				38C5D63F17A37E590005C2BD /* VJJSONPreferencesWindowController.h */,
 				38C5D64017A37E590005C2BD /* VJJSONPreferencesWindowController.m */,
-				38255566157C94C50099CC24 /* JsonElement.m */,
 				3868F79C1629EDCF00C31163 /* VJJsonDocumentDelegate.h */,
 				3868F79D1629EDCF00C31163 /* VJJsonDocumentDelegate.m */,
 				382554C5157BE3550099CC24 /* Supporting Files */,
@@ -288,6 +291,8 @@
 			children = (
 				0080B56720A010780041F9C3 /* CCConst.h */,
 				0080B56820A010780041F9C3 /* CCConst.m */,
+				008EC3E720A4083E008E2270 /* CCRequest.h */,
+				008EC3E820A4083E008E2270 /* CCRequest.m */,
 				385E84F51597839F001562F6 /* AppDelegate.h */,
 				385E84F61597839F001562F6 /* AppDelegate.m */,
 				38A1C033157DD7030034EDC4 /* VJRequest.h */,
@@ -617,6 +622,7 @@
 				0080B56920A010780041F9C3 /* CCConst.m in Sources */,
 				3868F79E1629EDCF00C31163 /* VJJsonDocumentDelegate.m in Sources */,
 				3868F7A4162B1AAC00C31163 /* VJXMLDocumentDelegate.m in Sources */,
+				008EC3E920A4083E008E2270 /* CCRequest.m in Sources */,
 				388DE10A165480EE00139B31 /* VJDocumentHistory.m in Sources */,
 				38C5D64117A37E590005C2BD /* VJJSONPreferencesWindowController.m in Sources */,
 			);
