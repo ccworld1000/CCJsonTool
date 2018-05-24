@@ -17,7 +17,7 @@
                BlueprintIdentifier = "3868F73A1629E8E700C31163"
                BuildableName = "VisualXML.app"
                BlueprintName = "VisualXML"
-               ReferencedContainer = "container:VisualJSON.xcodeproj">
+               ReferencedContainer = "container:CCJsonTool.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "3868F73A1629E8E700C31163"
             BuildableName = "VisualXML.app"
             BlueprintName = "VisualXML"
-            ReferencedContainer = "container:VisualJSON.xcodeproj">
+            ReferencedContainer = "container:CCJsonTool.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -58,7 +58,7 @@
             BlueprintIdentifier = "3868F73A1629E8E700C31163"
             BuildableName = "VisualXML.app"
             BlueprintName = "VisualXML"
-            ReferencedContainer = "container:VisualJSON.xcodeproj">
+            ReferencedContainer = "container:CCJsonTool.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -77,7 +77,7 @@
             BlueprintIdentifier = "3868F73A1629E8E700C31163"
             BuildableName = "VisualXML.app"
             BlueprintName = "VisualXML"
-            ReferencedContainer = "container:VisualJSON.xcodeproj">
+            ReferencedContainer = "container:CCJsonTool.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

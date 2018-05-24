@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "382554B9157BE3550099CC24"
-               BuildableName = "VisualJSON.app"
-               BlueprintName = "VisualJSON"
-               ReferencedContainer = "container:VisualJSON.xcodeproj">
+               BuildableName = "CCJsonTool.app"
+               BlueprintName = "CCJsonTool"
+               ReferencedContainer = "container:CCJsonTool.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "382554B9157BE3550099CC24"
-            BuildableName = "VisualJSON.app"
-            BlueprintName = "VisualJSON"
-            ReferencedContainer = "container:VisualJSON.xcodeproj">
+            BuildableName = "CCJsonTool.app"
+            BlueprintName = "CCJsonTool"
+            ReferencedContainer = "container:CCJsonTool.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "382554B9157BE3550099CC24"
-            BuildableName = "VisualJSON.app"
-            BlueprintName = "VisualJSON"
-            ReferencedContainer = "container:VisualJSON.xcodeproj">
+            BuildableName = "CCJsonTool.app"
+            BlueprintName = "CCJsonTool"
+            ReferencedContainer = "container:CCJsonTool.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "382554B9157BE3550099CC24"
-            BuildableName = "VisualJSON.app"
-            BlueprintName = "VisualJSON"
-            ReferencedContainer = "container:VisualJSON.xcodeproj">
+            BuildableName = "CCJsonTool.app"
+            BlueprintName = "CCJsonTool"
+            ReferencedContainer = "container:CCJsonTool.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -83,12 +83,12 @@
 		008EC3E720A4083E008E2270 /* CCRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CCRequest.h; sourceTree = "<group>"; };
 		008EC3E820A4083E008E2270 /* CCRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCRequest.m; sourceTree = "<group>"; };
 		338543E687681EA734AABFE8 /* libPods-VisualJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VisualJSON.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		382554BA157BE3550099CC24 /* VisualJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VisualJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		382554BA157BE3550099CC24 /* CCJsonTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCJsonTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		382554BE157BE3550099CC24 /* Cocoa.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		382554C1157BE3550099CC24 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		382554C2157BE3550099CC24 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		382554C3157BE3550099CC24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		382554C6157BE3550099CC24 /* VisualJSON-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisualJSON-Info.plist"; sourceTree = "<group>"; };
+		382554C6157BE3550099CC24 /* CCJsonTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCJsonTool-Info.plist"; sourceTree = "<group>"; };
 		382554C8157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		382554CA157BE3550099CC24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		382554CC157BE3550099CC24 /* VisualJSON-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisualJSON-Prefix.pch"; sourceTree = "<group>"; };
@@ -97,19 +97,19 @@
 		382554D1157BE3550099CC24 /* VJDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VJDocument.m; sourceTree = "<group>"; };
 		382554D4157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/VJDocument.xib; sourceTree = "<group>"; };
 		382554D7157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		382554E0157BE3550099CC24 /* VisualJSONImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisualJSONImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
+		382554E0157BE3550099CC24 /* CCJsonToolImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCJsonToolImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
 		382554E4157BE3550099CC24 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		382554E6157BE3550099CC24 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		382554E8157BE3550099CC24 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		382554EA157BE3550099CC24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		382554EE157BE3550099CC24 /* VisualJSONImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VisualJSONImporter-Info.plist"; sourceTree = "<group>"; };
+		382554EE157BE3550099CC24 /* CCJsonToolImporter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCJsonToolImporter-Info.plist"; sourceTree = "<group>"; };
 		382554F0157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		382554F2157BE3550099CC24 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		382554F4157BE3550099CC24 /* GetMetadataForFile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GetMetadataForFile.m; sourceTree = "<group>"; };
 		382554F6157BE3550099CC24 /* MySpotlightImporter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MySpotlightImporter.h; sourceTree = "<group>"; };
 		382554F7157BE3550099CC24 /* MySpotlightImporter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MySpotlightImporter.m; sourceTree = "<group>"; };
 		382554F9157BE3550099CC24 /* Importer Read Me.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Importer Read Me.txt"; sourceTree = "<group>"; };
-		382554FA157BE3550099CC24 /* VisualJSONImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisualJSONImporter-Prefix.pch"; sourceTree = "<group>"; };
+		382554FA157BE3550099CC24 /* CCJsonToolImporter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CCJsonToolImporter-Prefix.pch"; sourceTree = "<group>"; };
 		38255503157BE3730099CC24 /* Entitlements.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Entitlements.entitlements; sourceTree = "<group>"; };
 		38255565157C94C50099CC24 /* JsonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonElement.h; sourceTree = "<group>"; };
 		38255566157C94C50099CC24 /* JsonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonElement.m; sourceTree = "<group>"; };
@@ -198,8 +198,8 @@
 		382554BB157BE3550099CC24 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				382554BA157BE3550099CC24 /* VisualJSON.app */,
-				382554E0157BE3550099CC24 /* VisualJSONImporter.mdimporter */,
+				382554BA157BE3550099CC24 /* CCJsonTool.app */,
+				382554E0157BE3550099CC24 /* CCJsonToolImporter.mdimporter */,
 				3868F73B1629E8E700C31163 /* VisualXML.app */,
 			);
 			name = Products;
@@ -253,7 +253,7 @@
 		382554C5157BE3550099CC24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				382554C6157BE3550099CC24 /* VisualJSON-Info.plist */,
+				382554C6157BE3550099CC24 /* CCJsonTool-Info.plist */,
 				382554C7157BE3550099CC24 /* InfoPlist.strings */,
 				382554CA157BE3550099CC24 /* main.m */,
 				382554CC157BE3550099CC24 /* VisualJSON-Prefix.pch */,
@@ -278,10 +278,10 @@
 		382554ED157BE3550099CC24 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				382554EE157BE3550099CC24 /* VisualJSONImporter-Info.plist */,
+				382554EE157BE3550099CC24 /* CCJsonToolImporter-Info.plist */,
 				382554EF157BE3550099CC24 /* InfoPlist.strings */,
 				382554F2157BE3550099CC24 /* main.c */,
-				382554FA157BE3550099CC24 /* VisualJSONImporter-Prefix.pch */,
+				382554FA157BE3550099CC24 /* CCJsonToolImporter-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -344,9 +344,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		382554B9157BE3550099CC24 /* VisualJSON */ = {
+		382554B9157BE3550099CC24 /* CCJsonTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38255500157BE3550099CC24 /* Build configuration list for PBXNativeTarget "VisualJSON" */;
+			buildConfigurationList = 38255500157BE3550099CC24 /* Build configuration list for PBXNativeTarget "CCJsonTool" */;
 			buildPhases = (
 				C5DF35C53535DC0C196DFC34 /* [CP] Check Pods Manifest.lock */,
 				38CAB03C1664F48D00181B0D /* Generate Version xcconfig */,
@@ -361,14 +361,14 @@
 			);
 			dependencies = (
 			);
-			name = VisualJSON;
+			name = CCJsonTool;
 			productName = VisualJSON;
-			productReference = 382554BA157BE3550099CC24 /* VisualJSON.app */;
+			productReference = 382554BA157BE3550099CC24 /* CCJsonTool.app */;
 			productType = "com.apple.product-type.application";
 		};
-		382554DF157BE3550099CC24 /* VisualJSONImporter */ = {
+		382554DF157BE3550099CC24 /* CCJsonToolImporter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 382554FD157BE3550099CC24 /* Build configuration list for PBXNativeTarget "VisualJSONImporter" */;
+			buildConfigurationList = 382554FD157BE3550099CC24 /* Build configuration list for PBXNativeTarget "CCJsonToolImporter" */;
 			buildPhases = (
 				382554DC157BE3550099CC24 /* Sources */,
 				382554DD157BE3550099CC24 /* Frameworks */,
@@ -378,9 +378,9 @@
 			);
 			dependencies = (
 			);
-			name = VisualJSONImporter;
+			name = CCJsonToolImporter;
 			productName = VisualJSONImporter;
-			productReference = 382554E0157BE3550099CC24 /* VisualJSONImporter.mdimporter */;
+			productReference = 382554E0157BE3550099CC24 /* CCJsonToolImporter.mdimporter */;
 			productType = "com.apple.product-type.bundle";
 		};
 		3868F73A1629E8E700C31163 /* VisualXML */ = {
@@ -420,7 +420,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 382554B4157BE3550099CC24 /* Build configuration list for PBXProject "VisualJSON" */;
+			buildConfigurationList = 382554B4157BE3550099CC24 /* Build configuration list for PBXProject "CCJsonTool" */;
 			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -432,8 +432,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				382554B9157BE3550099CC24 /* VisualJSON */,
-				382554DF157BE3550099CC24 /* VisualJSONImporter */,
+				382554B9157BE3550099CC24 /* CCJsonTool */,
+				382554DF157BE3550099CC24 /* CCJsonToolImporter */,
 				3868F73A1629E8E700C31163 /* VisualXML */,
 			);
 		};
@@ -763,8 +763,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VisualJSONImporter/VisualJSONImporter-Prefix.pch";
-				INFOPLIST_FILE = "VisualJSONImporter/VisualJSONImporter-Info.plist";
+				GCC_PREFIX_HEADER = "VisualJSONImporter/CCJsonToolImporter-Prefix.pch";
+				INFOPLIST_FILE = "VisualJSONImporter/CCJsonToolImporter-Info.plist";
 				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
 				LIBRARY_STYLE = BUNDLE;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.youknowone.${PRODUCT_NAME:rfc1034identifier}";
@@ -780,8 +780,8 @@
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VisualJSONImporter/VisualJSONImporter-Prefix.pch";
-				INFOPLIST_FILE = "VisualJSONImporter/VisualJSONImporter-Info.plist";
+				GCC_PREFIX_HEADER = "VisualJSONImporter/CCJsonToolImporter-Prefix.pch";
+				INFOPLIST_FILE = "VisualJSONImporter/CCJsonToolImporter-Info.plist";
 				INSTALL_PATH = "@executable_path/../Contents/Library/Spotlight";
 				LIBRARY_STYLE = BUNDLE;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.youknowone.${PRODUCT_NAME:rfc1034identifier}";
@@ -801,9 +801,9 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
+				GCC_PREFIX_HEADER = "VisualJSON/CCJsonTool-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = JSON;
-				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
+				INFOPLIST_FILE = "VisualJSON/CCJsonTool-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Pods/build/$(CONFIGURATION)\"",
@@ -826,9 +826,9 @@
 					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "VisualJSON/VisualJSON-Prefix.pch";
+				GCC_PREFIX_HEADER = "VisualJSON/CCJsonTool-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = JSON;
-				INFOPLIST_FILE = "VisualJSON/VisualJSON-Info.plist";
+				INFOPLIST_FILE = "VisualJSON/CCJsonTool-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/Pods/build/$(CONFIGURATION)\"",
@@ -897,7 +897,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		382554B4157BE3550099CC24 /* Build configuration list for PBXProject "VisualJSON" */ = {
+		382554B4157BE3550099CC24 /* Build configuration list for PBXProject "CCJsonTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				382554FB157BE3550099CC24 /* Debug */,
@@ -906,7 +906,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		382554FD157BE3550099CC24 /* Build configuration list for PBXNativeTarget "VisualJSONImporter" */ = {
+		382554FD157BE3550099CC24 /* Build configuration list for PBXNativeTarget "CCJsonToolImporter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				382554FE157BE3550099CC24 /* Debug */,
@@ -915,7 +915,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38255500157BE3550099CC24 /* Build configuration list for PBXNativeTarget "VisualJSON" */ = {
+		38255500157BE3550099CC24 /* Build configuration list for PBXNativeTarget "CCJsonTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				38255501157BE3550099CC24 /* Debug */,
