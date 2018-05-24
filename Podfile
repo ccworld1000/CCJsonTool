@@ -1,6 +1,8 @@
 platform :osx, "10.9"
 
-target "VisualJSON" do
+project 'CCJsonTool.xcodeproj'
+
+target "CCJsonTool" do
     pod 'cdebug'
     pod 'FoundationExtension', '~> 1.2.4'
     pod 'ObjectXML', '>= 0.2'
