@@ -8,17 +8,17 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="NSApplication"/>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application">
+        <customObject id="-3" userLabel="Application" customClass="NSObject">
             <connections>
                 <outlet property="delegate" destination="558" id="595"/>
             </connections>
         </customObject>
         <menu title="AMainMenu" systemMenu="main" id="29">
             <items>
-                <menuItem title="VisualJSON" id="56">
-                    <menu key="submenu" title="VisualJSON" systemMenu="apple" id="57">
+                <menuItem title="CCJsonTool" id="56">
+                    <menu key="submenu" title="CCJsonTool" systemMenu="apple" id="57">
                         <items>
-                            <menuItem title="About VisualJSON" id="58">
+                            <menuItem title="About CCJsonTool" id="58">
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <connections>
                                     <action selector="orderFrontStandardAboutPanel:" target="-2" id="142"/>
@@ -41,7 +41,7 @@
                             <menuItem isSeparatorItem="YES" id="144">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Hide VisualJSON" keyEquivalent="h" id="134">
+                            <menuItem title="Hide CCJsonTool" keyEquivalent="h" id="134">
                                 <connections>
                                     <action selector="hide:" target="-1" id="367"/>
                                 </connections>
@@ -60,7 +60,7 @@
                             <menuItem isSeparatorItem="YES" id="149">
                                 <modifierMask key="keyEquivalentModifierMask" command="YES"/>
                             </menuItem>
-                            <menuItem title="Quit VisualJSON" keyEquivalent="q" id="136">
+                            <menuItem title="Quit CCJsonTool" keyEquivalent="q" id="136">
                                 <connections>
                                     <action selector="terminate:" target="-3" id="448"/>
                                 </connections>
