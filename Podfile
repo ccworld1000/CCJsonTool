@@ -8,7 +8,9 @@ target "CCJsonTool" do
     pod 'ObjectXML', '>= 0.2'
     pod 'AFNetworking', '~> 0.10.1'
     
-    pod 'CCSQLite', '~> 3.0.0'
+    pod 'CCSQLite'
+    pod 'CCFont'
+    pod 'CCDebug'
 end
 
 target "VisualXML" do
@@ -17,5 +19,7 @@ target "VisualXML" do
     pod 'ObjectXML', '>= 0.2'
     pod 'AFNetworking', '~> 0.10.1'
     
-    pod 'CCSQLite', '~> 3.0.0'
+    pod 'CCSQLite'
+    pod 'CCFont'
+    pod 'CCDebug'
 end

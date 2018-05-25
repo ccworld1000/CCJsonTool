@@ -1,15 +1,15 @@
-Website: [https://github.com/ccworld1000/VisualJSON](https://github.com/ccworld1000/VisualJSON)
+Website: [https://github.com/ccworld1000/CCJsonTool](https://github.com/ccworld1000/CCJsonTool)
 
-VisualJSON is simple JSON pretty-viewer for Mac OS X.
+CCJsonTool is simple JSON pretty-viewer for Mac OS X.
 
 ## For developer
-Fork on project page [https://github.com/ccworld1000/VisualJSON](https://github.com/ccworld1000/VisualJSON).
+Fork on project page [https://github.com/ccworld1000/CCJsonTool](https://github.com/ccworld1000/CCJsonTool).
 
 Or clone this project.
 ```
-git clone https://github.com/ccworld1000/VisualJSON.git
-cd VisualJSON
+git clone https://github.com/ccworld1000/CCJsonTool.git
+cd CCJsonTool
 git submodule update --init
 pod install
-open VisualJSON.xcworkspace
+open CCJsonTool.xcworkspace
 ```

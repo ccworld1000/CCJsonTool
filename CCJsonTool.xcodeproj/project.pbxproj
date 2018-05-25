@@ -495,12 +495,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CCJsonTool/Pods-CCJsonTool-resources.sh",
+				"${PODS_ROOT}/CCDebug/CCDebug.LICENSE.txt",
 				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.CCSQLite.txt",
 				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.FMDB.txt",
 				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.YapDatabase.txt",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CCDebug.LICENSE.txt",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE.CCSQLite.txt",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE.FMDB.txt",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE.YapDatabase.txt",
@@ -544,12 +546,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-VisualXML/Pods-VisualXML-resources.sh",
+				"${PODS_ROOT}/CCDebug/CCDebug.LICENSE.txt",
 				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.CCSQLite.txt",
 				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.FMDB.txt",
 				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.YapDatabase.txt",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CCDebug.LICENSE.txt",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE.CCSQLite.txt",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE.FMDB.txt",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE.YapDatabase.txt",
