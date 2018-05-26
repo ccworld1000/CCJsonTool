@@ -45,7 +45,6 @@
 		38F2F7381B0F248F00372447 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F2F7371B0F248F00372447 /* libz.dylib */; };
 		38F2F73A1B0F249300372447 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 38F2F7391B0F249300372447 /* libc++.dylib */; };
 		3CD962861DD51BB73ADC6475 /* libPods-VisualJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 338543E687681EA734AABFE8 /* libPods-VisualJSON.a */; };
-		9BEEA0246D3ED685232F81E4 /* libPods-VisualXML.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81989170E5964B0055B0C283 /* libPods-VisualXML.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -135,8 +134,6 @@
 		38F2F7391B0F249300372447 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		38FEC6721CBAB0CA00EE3273 /* Pods-VisualJSON.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-VisualJSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VisualJSON/Pods-VisualJSON.debug.xcconfig"; sourceTree = "<group>"; };
 		38FEC6731CBAB0CA00EE3273 /* Pods-VisualJSON.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-VisualJSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-VisualJSON/Pods-VisualJSON.release.xcconfig"; sourceTree = "<group>"; };
-		38FEC6741CBAB0D300EE3273 /* Pods-VisualXML.debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-VisualXML.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VisualXML/Pods-VisualXML.debug.xcconfig"; sourceTree = "<group>"; };
-		38FEC6751CBAB0D300EE3273 /* Pods-VisualXML.release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = "Pods-VisualXML.release.xcconfig"; path = "Pods/Target Support Files/Pods-VisualXML/Pods-VisualXML.release.xcconfig"; sourceTree = "<group>"; };
 		3FEF4C0F35BD3AD15B65847C /* Pods-CCJsonTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCJsonTool.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCJsonTool/Pods-CCJsonTool.debug.xcconfig"; sourceTree = "<group>"; };
 		654049D21A9DF715385DAB0D /* Pods-CCJsonTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCJsonTool.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCJsonTool/Pods-CCJsonTool.release.xcconfig"; sourceTree = "<group>"; };
 		81989170E5964B0055B0C283 /* libPods-VisualXML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VisualXML.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3868F73D1629E8E700C31163 /* Cocoa.framework in Frameworks */,
-				9BEEA0246D3ED685232F81E4 /* libPods-VisualXML.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,8 +329,6 @@
 			children = (
 				38FEC6721CBAB0CA00EE3273 /* Pods-VisualJSON.debug.xcconfig */,
 				38FEC6731CBAB0CA00EE3273 /* Pods-VisualJSON.release.xcconfig */,
-				38FEC6741CBAB0D300EE3273 /* Pods-VisualXML.debug.xcconfig */,
-				38FEC6751CBAB0D300EE3273 /* Pods-VisualXML.release.xcconfig */,
 				3FEF4C0F35BD3AD15B65847C /* Pods-CCJsonTool.debug.xcconfig */,
 				654049D21A9DF715385DAB0D /* Pods-CCJsonTool.release.xcconfig */,
 			);
@@ -386,13 +380,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3868F7881629E8E800C31163 /* Build configuration list for PBXNativeTarget "VisualXML" */;
 			buildPhases = (
-				0AF0832871F68648A9BA93AC /* [CP] Check Pods Manifest.lock */,
 				38FEC66F1CBAAFC100EE3273 /* Generate version xcconfig */,
 				3868F7371629E8E700C31163 /* Sources */,
 				3868F7381629E8E700C31163 /* Frameworks */,
 				3868F7391629E8E700C31163 /* Resources */,
 				3868F79A1629EACF00C31163 /* Copy Frameworks */,
-				AD5FDDD27CE6756A35191F37 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -470,24 +462,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0AF0832871F68648A9BA93AC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-VisualXML-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		346F49323B434C84B4E1D346 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -538,30 +512,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "echo \"APP_VERSION=`xcodepkgtool/version.sh`\" > version.xcconfig";
-		};
-		AD5FDDD27CE6756A35191F37 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-VisualXML/Pods-VisualXML-resources.sh",
-				"${PODS_ROOT}/CCDebug/CCDebug.LICENSE.txt",
-				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.CCSQLite.txt",
-				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.FMDB.txt",
-				"${PODS_ROOT}/CCSQLite/LICENSE/LICENSE.YapDatabase.txt",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CCDebug.LICENSE.txt",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE.CCSQLite.txt",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE.FMDB.txt",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/LICENSE.YapDatabase.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VisualXML/Pods-VisualXML-resources.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 		C5DF35C53535DC0C196DFC34 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -810,7 +760,6 @@
 		};
 		3868F7891629E8E800C31163 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38FEC6741CBAB0D300EE3273 /* Pods-VisualXML.debug.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -837,7 +786,6 @@
 		};
 		3868F78A1629E8E800C31163 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38FEC6751CBAB0D300EE3273 /* Pods-VisualXML.release.xcconfig */;
 			buildSettings = {
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
