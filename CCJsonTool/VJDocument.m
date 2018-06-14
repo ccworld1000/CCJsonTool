@@ -386,9 +386,40 @@
         BOOL allowInvalid = value.boolValue;
         
         manger.securityPolicy.allowInvalidCertificates = allowInvalid;
+        manger.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
         
-        [manger POST:<#(nonnull NSString *)#> parameters:<#(nullable id)#> progress:<#^(NSProgress * _Nonnull uploadProgress)uploadProgress#> success:<#^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject)success#> failure:<#^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error)failure#>];
+        typedef void (^OkBlock_t)(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject);
+        typedef void (^ErrorBlock_t)(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error);
         
+        OkBlock_t okBlock;
+        ErrorBlock_t errorBlock;
+        
+        okBlock = ^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            NSData *data= [NSJSONSerialization dataWithJSONObject:responseObject options:NSJSONWritingPrettyPrinted error:nil];
+            if (data != nil) {
+                tempContent = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+            }
+            [self performSelectorOnMainThread:@selector(refreshFinished) withObject:nil waitUntilDone:NO];
+        };
+        
+        errorBlock = ^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            tempContent = [error retain];
+            [self performSelectorOnMainThread:@selector(refreshFinished) withObject:nil waitUntilDone:NO];
+        };
+                
+        NSString *serverAddress = [URL absoluteString];
+        if ([self.method isEqualToString:@"GET"]) {
+            [manger GET:serverAddress parameters: nil progress: nil success:okBlock failure:errorBlock];
+        } else if ([self.method isEqualToString:@"POST"]) {
+            [manger POST:serverAddress parameters: nil progress:^(NSProgress * _Nonnull uploadProgress) {
+                
+            } success: okBlock failure:errorBlock];
+        } else if ([self.method isEqualToString:@"PUT"]) {
+            [manger PUT:serverAddress parameters: nil success:okBlock failure:errorBlock];
+        } else if (([self.method isEqualToString:@"DELETE"])) {
+            [manger DELETE:serverAddress parameters:nil success:okBlock failure:errorBlock];
+        }
+
 //        [operation setCompletionBlock:^{
 //            // set content field with data
 //            NSError *error = operation.error;

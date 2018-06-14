@@ -96,7 +96,6 @@
 		382554C6157BE3550099CC24 /* CCJsonTool-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CCJsonTool-Info.plist"; sourceTree = "<group>"; };
 		382554C8157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		382554CA157BE3550099CC24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		382554CC157BE3550099CC24 /* VisualJSON-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VisualJSON-Prefix.pch"; sourceTree = "<group>"; };
 		382554CE157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		382554D7157BE3550099CC24 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		382554E0157BE3550099CC24 /* CCJsonToolImporter.mdimporter */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CCJsonToolImporter.mdimporter; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,7 +250,6 @@
 				382554C6157BE3550099CC24 /* CCJsonTool-Info.plist */,
 				382554C7157BE3550099CC24 /* InfoPlist.strings */,
 				382554CA157BE3550099CC24 /* main.m */,
-				382554CC157BE3550099CC24 /* VisualJSON-Prefix.pch */,
 				382554CD157BE3550099CC24 /* Credits.rtf */,
 				38416C0D160A240A0059A916 /* Icon.iconset */,
 			);
